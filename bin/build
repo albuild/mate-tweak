@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+version=`cat version`
+target_version=`cat target-version`
+exec docker build . --force-rm --build-arg version=$version --build-arg target_version=$target_version -t albuild-mate-tweak:$version

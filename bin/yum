@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+version=`cat version`
+exec yum install rpm/albuild-mate-tweak-$version-1.amzn2.x86_64.rpm
